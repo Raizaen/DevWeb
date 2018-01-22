@@ -1,0 +1,26 @@
+1 mkdir dirA
+2 cd /dirA
+3 pwd
+4 cd ./home
+5 touch list1, ls /usr/bin > list1
+6 touch list2, ls /bin > list1
+7 echo $PATH > fic1 
+8 echo $USER > fic2
+9 echo Hello World! > .fic3
+10 ls .
+11 ls -l
+12 ls -l -a
+13 ls -l -F | grep -v '/$'
+14 mkdir subdir
+15 touch fic5, ls /home/v/a/valbay/dirA > fic5
+16 ls /home/v/a/valbay/dirA/subdir/
+17 "ls -L fic5" //// stat fic5        nb de ref = 1 
+18 ln /home/v/a/valbay/dirA/subdir/fic5 ficref
+19 ls /home/v/a/valbay/dirA
+20 ls /home/v/a/valbay/dirA/subdir    nb de ref = 2
+21 un lien créer = + 1 sur le nombre de lien 
+22 rm fic5
+23 ls /home/v/a/valbay/dirA/subdir
+24 ls ..
+25 Fic5 Suppr mais ficref toujours là 
+26 less ../ficref     (more moins performant)

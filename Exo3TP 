@@ -1,0 +1,18 @@
+1
+top -u valbay
+
+2
+firefox &
+
+3
+ps -u valbay
+
+4
+clique sur fermer
+
+5
+firefox &
+
+
+10
+kill 5636 
