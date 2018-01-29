@@ -1,0 +1,17 @@
+#!/bin/bash
+clear
+
+fichiers=`ls *.cpp`
+echo -e "les fichiers disponibles sont : \n$fichiers"
+i=0
+for fichier in $fichiers; do
+    g++ -Wall -std=c++11 $fichier -o test_$i
+    if [ -e test_$i ]
+    then
+	./test_$i
+    fi
+    $i=$i+1
+done
+
+
+
