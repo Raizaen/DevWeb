@@ -1,0 +1,51 @@
+1 Caractère Joker
+
+	1. find . -name 'sol*' 
+	2. find . -name '*.txt' 
+	3. find . -name '??*'
+	4. find . -name '*[0-9]'
+	5. find . -name '??[0-9]*'
+	6. find . -name '?[[:upper:]]* ou [A-Z]'
+
+2 recherche de fichier 
+
+	1. find /etc/console-setup/ -exec file  {} \;
+		find /etc/console-setup/ -exec ls --file-type {} \;
+
+	2. find /usr/bin/ -type f -size 1000000c -exec ls -l {} \; 
+
+	3. find /tmp/ -type f -user root -exec ls -l {} \;
+
+	4. find . -type f -amin +20 
+
+3 recherche dans un fichier 
+
+	1. grep '^t' essai.txt
+
+	2. grep '^t' -n essai.txt
+
+	3. grep '^t' -c essai.txt
+
+	4. grep '^m.*' essai.txt
+
+	5. grep '^[^t]' essai.txt 
+
+	6. grep '^[^t*]' essai.txt
+	
+	7. grep '^[^t*]' essai.txt | sort > extrait.txt
+
+	8. grep -v[u,o] essai.txt | sort > extrait2.txt
+
+	9. 
+
+
+
+
+
+
+
+
+
+
+
+
