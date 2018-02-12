@@ -1,0 +1,32 @@
+1 Commande cut 
+	3 . cut -d: -f1,4 /etc/group > Gn+m
+
+	4 . cut -d: -f1,4 /etc/group | grep "frantz" > Gn+m+frantz
+
+	5 . cut -d: -f1,4 /etc/group | grep "freerad"
+
+	6 . 
+
+2 Commande tr 
+	1 . sauvegarde une variable "ligne" et l'affiche
+
+	2 . echo $ligne | tr '[A-Z]' '[a-z]'
+
+	3 . echo $ligne | tr -c '[a-z]' '-'
+
+	4 . echo $ligne | tr -s ' '
+
+	5 . tr -cs 'a-zA-Z0-9' '\n' <ligne |  sort | uniq > fich2
+
+3 Utilisation du terminal 
+
+	1 . un processus en plus 
+
+	2 / 3 . GB=$(cat fileGB) 
+	    	echo $GB
+
+	    	Grande       =    Grande Bretagne 
+	    	Bretagne
+	
+	4 .   
+ 
