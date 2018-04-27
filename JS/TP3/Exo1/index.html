@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+	<head>
+		<title id="title"></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+
+		<script type="text/javascript">
+			var L =0;
+			var pContent = ["Ceci est un paragraphe.", "This is a paragraph.", "Questo è un paragrafo."];
+			var titleContent = ["Ma page Web en français", "My webpage in English", "La mia pagina web in Italian"];
+			var subtitleContent = ["Mon titre", "My title", "il mio Titolo"];
+
+			function update(L) {
+				window.document.getElementById("p").innerHTML = pContent[L];
+				window.document.getElementById("title").innerHTML = titleContent[L];
+				window.document.getElementById("subtitle").innerHTML = subtitleContent[L];
+				if (L==0) {
+					document.body.style.backgroundColor = "lightblue";
+				}
+				if (L==1) {
+					document.body.style.backgroundColor = "PeachPuff";
+				}
+				if (L==2) {
+					document.body.style.backgroundColor = "lime";
+				}
+			}
+		</script>
+
+	</head>
+	<body onload="update(L)">
+		<img onclick="L=1; update(L)" src="ENG.png" class="flag" alt="Drapeau Anglais" />
+		<img onclick="L=0; update(L)" src="FRA.png" class="flag" alt="Drapeau Français" />
+		<img onclick="L=2; update(L)" src="ITA.png" class="flag" alt="Drapeau Italien" />
+		<h2 id="subtitle" ></h2>
+		<p id="p"></p>
+
+	</body>
+</html>
