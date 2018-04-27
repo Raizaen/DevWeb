@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="fr-FR">
+	
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8"/>
+		<title id="t">Formulaire Région</title>
+		<script src="script.js"></script>
+	</head>
+
+	<body onload="update()">
+		<form method="post" action="http://www.info.univ-angers.fr/~rossi/habitant.php" onsubmit="return verifier();">
+			<fieldset>
+				<p>
+					<label for="nom">Nom (obligatoire) :</label><input type="text" name="nom" id="nom" size="20" maxlength="10" placeholder="Votre nom" /><br/>
+					<br />
+				</p>
+				<p>
+					Veuillez cocher une case ci-dessous (obligatoire) <br />
+					<input type="radio" name="genre" id="madame" value="madame"> Madame
+					<input type="radio" name="genre" id="monsieur" value="monsieur"> Monsieur
+					<br />
+				<p>
+			</fieldset>
+			<br />
+			<fieldset>
+			<p>
+				Veuillez choisir votre région <br />
+				<select name="region" id="region" onchange="update();">
+					<option value="bretagne">Bretagne</option>
+					<option value="paysdelaLoire">Pays de la Loire</option>
+				</select>
+			</p>
+			<p>
+				Veuillez choisir votre département <br />
+				<select name="departement" id="departement">
+				</select>
+			</p>
+			</fieldset>
+			<br />
+			<input type="submit" value="Envoyer"> <input type="reset">
+		
+		</form>
+
+	
+	</body>
+	
+</html>
