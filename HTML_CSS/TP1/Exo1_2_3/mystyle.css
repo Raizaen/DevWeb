@@ -1,0 +1,15 @@
+table {
+	background: #D4D4D4
+}
+
+th {
+	font-weight: bold
+}
+
+.Maj {
+	text-transform: uppercase
+}
+
+.Minimaj {
+	font-variant: small-caps
+}

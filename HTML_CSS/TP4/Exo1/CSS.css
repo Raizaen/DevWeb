@@ -1,0 +1,9 @@
+.pic-right {
+	float: right;
+	display:inline;
+}
+
+.pic-left {
+	float: left;
+	/*display:inline;*/
+}
